@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+       
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        nav {
+            background: #222;
+            padding: 12px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        nav a:nth-child(1) {
+            color: #00bcd4; 
+        }
+        nav a:nth-child(3) {
+            color: #00bcd4; 
+        }
+        /* Main Content */
+        .content {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+        }
+        .box {
+            flex: 1;
+            height: 250px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color: #ffffff;
+            font-size: 20px;
+            border-radius: 4px;
+            padding: 20px;
+        }
+        .left {
+            background: #3f51b5;
+        }
+        .right {
+            background: #009688;
+        }
+
+        footer {
+            background: #0d47a1;
+            color: #ffffff;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="C:\Users\LENOVO\Downloads\images.jpg" alt="Banner Image">
+        </header>
+        <!-- Navigation -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <!-- Content -->
+        <main class="content">
+            <div class="box left">LEFT SIDE</div>
+            <div class="box right">RIGHT SIDE</div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            Website Name
+        </footer>
+    </div>
+</body>
+</html>
